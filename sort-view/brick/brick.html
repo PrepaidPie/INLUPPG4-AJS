@@ -1,0 +1,13 @@
+<div id="products-brick">
+    <div class="product-brick" ng-repeat="product in products | orderBy: sortColumn | filter: searchText:wholeWord | limitTo: itemsAmount">
+        <img ng-src="{{ product.img }}">
+        <div class="name-brand">
+            <strong>{{ product.productname }}</strong>
+            <small class="brand">{{ product.brand }}</small>
+        </div>
+        <span class="orange-text">{{ "$" + product.price }}</span>
+        <span class="stars">
+            <i class="fas fa-star" ng-repeat="x in [].constructor(product.stars) track by $index"></i>
+        </span>
+    </div>
+</div>
