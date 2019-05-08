@@ -1,0 +1,10 @@
+{
+  "name": "inluppg4-ajs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
